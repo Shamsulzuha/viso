@@ -1,0 +1,85 @@
+#customer .slick-slide > div {
+  margin: 0 20px;
+  padding: 35px 0;
+}
+
+#customer .slick-next {
+  right: 100px !important;
+}
+#customer .slick-prev {
+  left: 100px !important;
+}
+
+#customer .slick-prev,
+#customer .slick-next {
+  width: 40px !important;
+  height: 40px !important;
+  padding: 5px !important;
+  border-radius: 50%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+  background-color: #002147 !important;
+  position: absolute !important;
+}
+
+#customer .slick-prev:hover,
+#customer .slick-next:hover {
+  background-color: #68c8fc !important;
+  color: white;
+}
+
+@media screen and (max-width: 1440px) {
+  #customer .slick-next {
+    right: 60px !important;
+  }
+  #customer .slick-prev {
+    left: 60px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #customer .slick-prev,
+  #customer .slick-next {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  #customer .slick-next {
+    right: 30px !important;
+  }
+  #customer .slick-prev {
+    left: 30px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #customer .slick-next {
+    right: -30px !important;
+  }
+  #customer .slick-prev {
+    left: -30px !important;
+  }
+  #customer .slick-slide > div {
+    margin: 0 5px;
+    padding: 5px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #customer .slick-next {
+    right: -8px !important;
+  }
+  #customer .slick-prev {
+    left: -8px !important;
+  }
+  #customer .slick-slide > div {
+    margin: 0 5px;
+    padding: 5px 0;
+  }
+  #customer .slick-prev,
+  #customer .slick-next {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
