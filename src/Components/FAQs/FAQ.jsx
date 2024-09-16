@@ -6,7 +6,7 @@ import PrimaryPara from "../PrimaryPara";
 import asked from "./../../assets/Asked.webp";
 
 function FAQ() {
-  const [answer, setAnswer] = useState(2);
+  const [answer, setAnswer] = useState(1);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -18,8 +18,8 @@ function FAQ() {
           <div className="">
             <PrimaryHeading
               Heading1="Here are few"
-              Heading2="Steps"
-              Heading3=" to follow you!"
+              Heading2="Steps "
+              Heading3="to follow you!"
             />
             <PrimaryPara para="Lorem ipsum dolor sit amet consectetur. Pulvinar orci ut massa  Pulvinar orci ut massa Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. Pulvinar orci ut massa  Pulvinar orci ut massa Lorem ipsum dolor sit " />
           </div>
@@ -29,10 +29,10 @@ function FAQ() {
             </div>
 
             <div className="lg:col-span-2 flex flex-col justify-center items-center lg:justify-end lg:items-end xl:gap-10 gap-8 z-20">
-              {FAQsData.map((faqs, i) => {
+              {FAQsData.map((faqs, index) => {
                 return answer == faqs.id ? (
                   <div
-                    key={i}
+                    key={index}
                     className="xl:p-10 lg:p-8 md:p-6 p-5 rounded-[40px] shadow-lg bg-white md:w-[600px] xl:w-[770px]"
                   >
                     <div
@@ -51,7 +51,7 @@ function FAQ() {
                     </p>
                   </div>
                 ) : (
-                  <div key={i}>
+                  <div key={index}>
                     <div className="xl:p-10 lg:p-8 md:p-6 p-5 rounded-[194px] bg-white md:w-[600px] xl:w-[770px]">
                       <div
                         onClick={() => setAnswer(faqs.id)}
